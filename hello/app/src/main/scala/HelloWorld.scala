@@ -9,5 +9,7 @@ object HelloWorld extends App {
     val t01, t02, t03 = Value
   }
 
-  val a = greeting[Enum1.type, Enum2.type]
+  val a = greeting(Enum1, Enum2)
+
+  println(a.from1(Enum1.T01))
 }
